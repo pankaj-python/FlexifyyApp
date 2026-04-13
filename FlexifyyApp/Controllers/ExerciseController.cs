@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 
-// this is ////
 
 namespace FlexifyyApp.Controllers
 {
