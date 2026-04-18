@@ -20,7 +20,8 @@ namespace FlexifyyApp.Controllers
             _jwt = jwt;
         }
 
-        [HttpPost("register")]
+        [HttpPost]
+        [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
             if (!ModelState.IsValid)
@@ -61,7 +62,8 @@ namespace FlexifyyApp.Controllers
             });
         }
 
-        [HttpPost("login")]
+        [HttpPost]
+        [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
             if (!ModelState.IsValid)
