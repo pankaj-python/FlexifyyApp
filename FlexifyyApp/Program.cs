@@ -87,11 +87,10 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Swagger Development me
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 
 app.UseCors("AllowFrontend");
